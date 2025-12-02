@@ -16,10 +16,6 @@ function [x_min, N] = lagrange(a0, b0, c0, epsilon, gamma, Nmax, fun)
 %     x_min      - estimated minimum of fun(x)
 %     N          - number of iterations performed
 %
-%   Notes:
-%     - The method constructs a Lagrange interpolating parabola
-%       through (a, f(a)), (b, f(b)), (c, f(c)) and takes its minimum.
-%     - Works well for smooth, unimodal functions.
 
     % Preallocate arrays for efficiency
     a = zeros(1, Nmax);
